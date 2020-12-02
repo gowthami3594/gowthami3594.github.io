@@ -1,0 +1,36 @@
+﻿@model OnlineEducationSystem.Models.StudentViewModel
+@{
+    ViewBag.Title = "StudentLogin1";
+}
+
+
+<div class="container" style="width:60%;margin-top:2%">
+    @if (Model != null)
+    {
+    <ul class="list-group">
+        <li class="list-group-item active">Student Information</li>
+        <li class="list-group-item">Student Id:<b>@Model.SId</b></li>
+        <li class="list-group-item">Student Name:<b>@Model.SName</b></li>
+        <li class="list-group-item">Student DOB:<b>@Model.DOB</b></li>
+        <li class="list-group-item">Student FatherName:<b>@Model.FatherName</b></li>
+        <li class="list-group-item">Student MotherName:<b>@Model.MotherName</b></li>
+        <li class="list-group-item">MobileNumber:<b>@Model.MobileNumber</b></li>
+        <li class="list-group-item">Alternate MobileNUmber:<b>@Model.AlternateMobileNumber</b></li>
+        <li class="list-group-item">Student Email:<b>@Model.Email</b></li>
+        <li class="list-group-item">Student Address:<b>@Model.Address</b></li>
+        <li class="list-group-item">Student Branch:<b>@Model.Branch</b></li>
+
+
+
+
+    </ul>
+
+    }
+
+
+
+</div>
+<br/>
+<br/>
+
+<p><a class="btn btn-default" href="~/Home/Index">Back To Home Page</a></p>

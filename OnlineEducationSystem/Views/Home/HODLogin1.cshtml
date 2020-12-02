@@ -1,0 +1,51 @@
+﻿
+@model OnlineEducationSystem.Models.HODViewModel 
+@{
+    ViewBag.Title = "HODLogin1";
+}
+
+
+<div class="container" style="width:60%;margin-top:2%">
+    @if (Model != null)
+
+    {
+    <ul class="list-group">
+        <li class="list-group-item active">HOD Information</li>
+        <li class="list-group-item">HOD Id:<b>@Model.HId</b></li>
+        <li class="list-group-item">HOD Name:<b>@Model.HName</b></li>
+        <li class="list-group-item">HOD DOB:<b>@Model.HDOB</b></li>
+        <li class="list-group-item">HOD Branch:<b>@Model.HBranch</b></li>
+        <li class="list-group-item">HOD Qualification:<b>@Model.Qualification</b></li>
+        <li class="list-group-item">HOD MobileNumber:<b>@Model.HMobileNumber</b></li>
+        <li class="list-group-item">HOD Email:<b>@Model.HEmail</b></li>
+        <li class="list-group-item">HOD Address:<b>@Model.HAddress</b></li>
+
+
+
+
+
+
+
+
+    </ul>
+
+    }
+
+
+
+</div>
+<br />
+<br />
+<table>
+    <tr>
+        <td>
+            <p><a class="btn btn-default" href="~/Home/GetStudents">View Students</a></p>
+        </td>
+        <td>
+            <p><a class="btn btn-default" href="~/Home/GetFaculty">View Faculty</a></p>
+        </td>
+        <td>
+            <p><a class="btn btn-default" href="~/Home/Index">Back To Home Page</a></p>
+        </td>
+    </tr>
+</table>

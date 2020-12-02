@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OESModelStoreContainer" CdmEntityContainer="OESEntities2">
+    <EntitySetMapping Name="Faculties">
+      <EntityTypeMapping TypeName="OESModel.Faculty">
+        <MappingFragment StoreEntitySet="Faculty">
+          <ScalarProperty Name="FId" ColumnName="FId" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="FBranch" ColumnName="FBranch" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="FDOB" ColumnName="FDOB" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HEADs">
+      <EntityTypeMapping TypeName="OESModel.HEAD">
+        <MappingFragment StoreEntitySet="HEAD">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="PDOB" ColumnName="PDOB" />
+          <ScalarProperty Name="PQualification" ColumnName="PQualification" />
+          <ScalarProperty Name="PEmail" ColumnName="PEmail" />
+          <ScalarProperty Name="PMobileNumber" ColumnName="PMobileNumber" />
+          <ScalarProperty Name="PAddress" ColumnName="PAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HODs">
+      <EntityTypeMapping TypeName="OESModel.HOD">
+        <MappingFragment StoreEntitySet="HOD">
+          <ScalarProperty Name="HId" ColumnName="HId" />
+          <ScalarProperty Name="HName" ColumnName="HName" />
+          <ScalarProperty Name="HDOB" ColumnName="HDOB" />
+          <ScalarProperty Name="HBranch" ColumnName="HBranch" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="HMobileNumber" ColumnName="HMobileNumber" />
+          <ScalarProperty Name="HEmail" ColumnName="HEmail" />
+          <ScalarProperty Name="HAddress" ColumnName="HAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="OESModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="SId" ColumnName="SId" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="AlternateMobileNumber" ColumnName="AlternateMobileNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

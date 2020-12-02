@@ -1,0 +1,67 @@
+﻿@model IEnumerable<OnlineEducationSystem.Models.HOD>
+
+@{
+    ViewBag.Title = "GetHOD";
+}
+
+<h2>GetHOD</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HDOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HBranch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HMobileNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HAddress)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HDOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HBranch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HMobileNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HAddress)
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+<br />
+<br />
+<p><a class="btn btn-default" href="~/Home/Index">Back To Home Page</a></p>
